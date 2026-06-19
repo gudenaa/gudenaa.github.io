@@ -1,56 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <title>Gustavo Dena teste</title>
+    <title>Gustavo Dena | Analista de Requisitos & Gestão Ágil</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container-fluid main">
-  hello
-</div>
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        exemplos de alertas
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-<div id="liveAlertPlaceholder"></div>
-<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-</div>
-<script src="script.js"></script>
+
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- =========================================
+         HERO SECTION CRIATIVA
+         ========================================= -->
+    <section id="home" class="hero-creative">
+        <!-- Elementos decorativos de fundo -->
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        
+        <div class="container-fluid">
+            <div class="row align-items-center min-vh-100">
+                <!-- Coluna da Foto -->
+                <div class="col-lg-6 hero-image-col order-2 order-lg-1">
+                    <div class="image-wrapper">
+                        <img src="images/profile.png" alt="Gustavo Dena" class="profile-img">
+                        
+                        <!-- Badge flutuante -->
+                        <div class="floating-badge badge-1">
+                            <i class="bi bi-kanban-fill"></i>
+                            <span>Agilidade</span>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <span>Crescimento</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coluna do Texto -->
+                <div class="col-lg-6 hero-text-col order-1 order-lg-2">
+                    <div class="hero-content">
+                        <div class="hero-label">
+                            <span class="pulse-dot"></span>
+                            Disponível para oportunidades
+                        </div>
+                        
+                        <h1 class="hero-title-creative">
+                            <span class="title-line">Gustavo</span>
+                            <span class="title-line gradient-text">Dena</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            Transformo <span class="highlight">complexidade</span> em 
+                            <span class="highlight">clareza</span>. Ponte entre negócios e 
+                            tecnologia com foco em <span class="typewriter"></span>
+                        </p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Semestres ADS</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Foco em Valor</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number">∞</span>
+                                <span class="stat-label">Cafés</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-cta">
+                            <a href="#contato" class="btn-magnetic btn-primary-custom">
+                                <span>Vamos conversar</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <a href="#sobre" class="btn-secondary-custom">
+                                <span>Explorar</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SOBRE - Layout Criativo
+         ========================================= -->
+    <section id="sobre" class="about-creative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title-creative">
+                        A <span class="gradient-text">Ponte</span> que Conecta
+                    </h2>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-4 d-flex">
+                    <div class="concept-card w-100" data-tilt>
+                        <div class="concept-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h3>Pessoas</h3>
+                        <p>Ambientes de autonomia, propósito e segurança psicológica para entregas excepcionais.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex">
+                    <div class="concept-card w-100" data-tilt>
+                        <div class="concept-icon">
+                            <i class="bi bi-gear-wide-connected"></i>
+                        </div>
+                        <h3>Processos</h3>
+                        <p>Refinamento, Scrum e Azure DevOps para fluxo contínuo e previsibilidade.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex">
+                    <div class="concept-card w-100" data-tilt>
+                        <div class="concept-icon">
+                            <i class="bi bi-cpu-fill"></i>
+                        </div>
+                        <h3>Tecnologia</h3>
+                        <p>Requisitos executáveis unindo IA, Educação e Desenvolvimento de software.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SKILLS - Layout Assimétrico
+         ========================================= -->
+    <section id="skills" class="skills-creative">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 skills-text">
+                    <h2 class="section-title-creative text-start">
+                        Skills que <br>
+                        <span class="gradient-text">Movem Resultados</span>
+                    </h2>
+                    <p class="skills-intro">
+                        Combinação de hard e soft skills para entregar valor consistente e times alinhados.
+                    </p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="skills-grid">
+                        <div class="skill-item large" data-skill="agile">
+                            <i class="bi bi-kanban-fill"></i>
+                            <h4>Agilidade & Scrum</h4>
+                            <p>Sprints, Burndown, Cerimônias</p>
+                        </div>
+                        <div class="skill-item" data-skill="requirements">
+                            <i class="bi bi-list-check"></i>
+                            <h4>Análise de Requisitos</h4>
+                        </div>
+                        <div class="skill-item" data-skill="problems">
+                            <i class="bi bi-puzzle-fill"></i>
+                            <h4>Resolução de Problemas</h4>
+                        </div>
+                        <div class="skill-item large" data-skill="leadership">
+                            <i class="bi bi-chat-dots-fill"></i>
+                            <h4>Liderança Servidora</h4>
+                            <p>Facilitação e comunicação</p>
+                        </div>
+                        <div class="skill-item" data-skill="devops">
+                            <i class="bi bi-cloud-fill"></i>
+                            <h4>Azure DevOps</h4>
+                        </div>
+                        <div class="skill-item" data-skill="qa">
+                            <i class="bi bi-check2-square"></i>
+                            <h4>QA & Qualidade</h4>
+                        </div>
+                        <div class="skill-item" data-skill="communication">
+                            <i class="bi bi-megaphone-fill"></i>
+                            <h4>Comunicação Ativa</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         JORNADA - Timeline Criativa
+         ========================================= -->
+    <section id="journey" class="journey-creative">
+        <div class="container">
+            <h2 class="section-title-creative text-center">
+                Minha <span class="gradient-text">Jornada</span>
+            </h2>
+            
+            <div class="timeline-creative">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">Atualmente</span>
+                        <h3>Analista de Requisitos</h3>
+                        <p>Projetos de educação e IA. Interface com clientes, ADO, QA e Devs.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Azure DevOps</span>
+                            <span class="tag">IA</span>
+                            <span class="tag">Educação</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">Gestão Ágil</span>
+                        <h3>Sprints & Resultados</h3>
+                        <p>Burndowns positivos, transparência e entrega contínua de valor.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Scrum</span>
+                            <span class="tag">Agilidade</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">Networking</span>
+                        <h3>WorkinTech & Eventos</h3>
+                        <p>Conexões com RHs e CEOs sobre o que realmente importa no mercado.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Networking</span>
+                            <span class="tag">Mercado</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">Formação</span>
+                        <h3>ADS - UniCesumar</h3>
+                        <p>3º semestre com excelência acadêmica e foco em engenharia de requisitos.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">UniCesumar</span>
+                            <span class="tag">ADS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         CONTATO - Seção Final
+         ========================================= -->
+    <section id="contato" class="contact-creative">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-text">
+                    <h2 class="section-title-creative text-start">
+                        Bora construir<br>
+                        <span class="gradient-text">algo juntos?</span>
+                    </h2>
+                    <p class="contact-intro">
+                        Sempre aberto a conectar sobre Agilidade, Análise de Requisitos, 
+                        Liderança ou novos desafios.
+                    </p>
+                    
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/gustavodena" target="_blank" class="contact-link">
+                            <i class="bi bi-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/gudenaa" target="_blank" class="contact-link">
+                            <i class="bi bi-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.instagram.com/gu_denaa/" target="_blank" class="contact-link">
+                            <i class="bi bi-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="mailto:gustavodenaa@gmail.com" target="_blank" rel="noopener" class="contact-link">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-visual">
+                    <div class="visual-circle circle-1"></div>
+                    <div class="visual-circle circle-2"></div>
+                    <div class="visual-circle circle-3"></div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="creative-footer">
+            <p>&copy; 2026 Gustavo Henrique Nunes Dena. Feito com amor e café.</p>
+        </footer>
+    </section>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Vanilla Tilt para efeito 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="js/script.js"></script>
 </body>
 </html>
